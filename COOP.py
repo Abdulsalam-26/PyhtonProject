@@ -6,7 +6,7 @@ app = Flask(__name__)
 app.secret_key = 'your_secret_key'
 
 # إعداد قاعدة البيانات
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'postgresql://postgres:QERtBfnxYpyiKDyPlHGEaKsjPeOmzLGn@postgres.railway.internal:5432/railway')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False  # منع إشعارات التغييرات
 db = SQLAlchemy(app)
 
