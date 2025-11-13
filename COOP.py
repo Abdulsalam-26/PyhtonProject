@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 import os
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  
+app.secret_key = 'your_secret_key'
 
 # إعداد قاعدة البيانات
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'postgresql://postgres:QERtBfnxYpyiKDyPlHGEaKsjPeOmzLGn@postgres.railway.internal:5432/railway')
